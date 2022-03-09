@@ -16,7 +16,7 @@ class Game:
         self.value_gravity = 3
         self.screen = pygame.display.set_mode((544, 720))
         pygame.display.set_caption("Nono - Aventure")
-        pygame.mixer.music.load('music.wav')
+        #pygame.mixer.music.load('music.wav')
 
         # charger la carte(tmx)
         tmx_data = pytmx.util_pygame.load_pygame('carte_verti.tmx')
@@ -65,7 +65,8 @@ class Game:
             # self.player.move_up()
 
     def launch_music(self):
-        pygame.mixer.music.play()
+        #pygame.mixer.music.play()
+        pass
 
     def gravity(self):
         self.player.position[1] += 3
